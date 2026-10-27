@@ -46,7 +46,7 @@ class tg extends azoo {
 
 public class TestAzooInherit {
 
-
+	
 	public static void main (String[] args) {
 		// TODO Auto-generated method stub
 		dg	d1	= new dg();
@@ -80,11 +80,13 @@ public class TestAzooInherit {
 		azoo az1 = new azoo();
 		work(az1,"az");
 	}
+	
+
 
 /* method 처리
  * 
  */
-	
+	// 2. 동일한 class 함수 구현 
 	private static void work (azoo az1, String string ){
 		az1.name = "az1";
 		az1.food();
@@ -99,6 +101,7 @@ public class TestAzooInherit {
 			((tg) az1).cry();
 		 	
 }
+	// 1. method overloading 처리
 	private static void work (dg d1, String string ){
 		d1.name = "d";
 		d1.bark();

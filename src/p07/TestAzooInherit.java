@@ -47,7 +47,7 @@ class tg extends azoo {
 public class TestAzooInherit {
 
 
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 		// TODO Auto-generated method stub
 		dg	d1	= new dg();
 		work(d1,"d");
@@ -66,7 +66,7 @@ public class TestAzooInherit {
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		// TODO Auto-generated method stub
 		dg	d1	= new dg();
 		work(d1,"d");
@@ -78,24 +78,25 @@ public class TestAzooInherit {
 		work(t1,"t");
 		
 		azoo az1 = new azoo();
-		work(az1,"az")
+		work(az1,"az");
 	}
+
 /* method 처리
  * 
  */
-	//
+	
 	private static void work (azoo az1, String string ){
-		azoo.name = name;
-		azoo.food();
+		az1.name = "az1";
+		az1.food();
 	
 	// class
 	
-	 	if (azoo instanceof dg)
-	 		((dg) azoo).bark();
-	 	if (azoo instanceof ct)
-			((ct) azoo).mew();
-	 	if (azoo instanceof tg)
-			((tg) azoo).cry();
+	 	if (az1 instanceof dg)
+	 		((dg) az1).bark();
+	 	if (az1 instanceof ct)
+			((ct) az1).mew();
+	 	if (az1 instanceof tg)
+			((tg) az1).cry();
 		 	
 }
 	private static void work (dg d1, String string ){

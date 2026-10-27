@@ -9,28 +9,28 @@ aa	bb	cc
 */
 
 class grmemb {
-	//fields
+	// fields
 	private	String	name;
 	private	int		bYear;
 	private String	role;
 	
-	//constructor
-	//public grmemb(String name, int bYear, String role) {
+	// constructor
+	// public grmemb(String name, int bYear, String role) {
 		/*
 		this.name 	= name;
 		this.bYear 	= bYear;
 		this.role 	= role;
 		*/
 		
-	//method
+	// method
 	public	void	info() {
 		//int		age		= LocalDate.now().getYear() - this.bYear;
-		System.out.printf("%s %d %d \n", 
+		System.out.printf("%s %d %s \n", 
 				name, bYear, role);
 		
 		
 	}
-
+	
 	public grmemb(String name, int bYear, String role) {
 		super();
 		this.name = name;
